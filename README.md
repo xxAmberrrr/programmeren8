@@ -4,6 +4,6 @@ ClickIt is een clicker game. Elke keer krijg je nieuwe vijandjes voor je, deze v
 
 Tijdens het spelen kan je ook power ups kopen van je verdiende geld. Dit geld verdien je door de vijandjes dood te maken. Deze power ups zullen je helpen om de vijandjes eerder dood te krijgen. 
 
-#Pull request week 4
+# Pull request week 4
 
 Link: https://github.com/joey-school/cmgt-game-1/pull/1
