@@ -6,3 +6,29 @@ body, html {
 * {
     box-sizing: border-box;
 }
+
+game {
+    width:100vw; height:100vh;
+    background-color:black;
+    overflow:hidden;
+}
+
+game * {
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+ui {
+    transform: translate(20px, 20px);
+    pointer-events: none;
+}
+
+textfield {
+    font-size: 1.4em;
+    width:530px;
+    text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
+    transform: translateY(80px);
+}
