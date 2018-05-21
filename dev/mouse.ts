@@ -1,0 +1,3 @@
+class Mouse extends Enemy {
+
+}
