@@ -10,18 +10,21 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Enemy = (function () {
-    function Enemy() {
+    function Enemy(element) {
+        this.posy = 0;
+        this.posx = 0;
+        this.element = document.createElement(element);
+        var foreground = document.getElementsByTagName("foreground")[0];
+        foreground.appendChild(this.element);
     }
-    Enemy.prototype.performAttackBehaviour = function () {
-    };
-    Enemy.prototype.setAttackBehaviour = function () {
-    };
     return Enemy;
 }());
 var Game = (function () {
     function Game() {
         this.coins = 0;
+        this.enemies = [];
         this.textfield = document.getElementsByTagName("textfield")[0];
+        this.enemies.push(new Mouse());
         this.gameLoop();
     }
     Game.getInstance = function () {
@@ -32,6 +35,10 @@ var Game = (function () {
     };
     Game.prototype.gameLoop = function () {
         var _this = this;
+        for (var _i = 0, _a = this.enemies; _i < _a.length; _i++) {
+            var enemey = _a[_i];
+            enemey.update();
+        }
         requestAnimationFrame(function () { return _this.gameLoop(); });
     };
     Game.prototype.score = function () {
@@ -46,15 +53,27 @@ window.addEventListener("load", function () {
 var Mouse = (function (_super) {
     __extends(Mouse, _super);
     function Mouse() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.call(this, "mouse") || this;
+        _this.posx = 550;
+        _this.posy = 300;
+        return _this;
     }
+    Mouse.prototype.update = function () {
+        this.element.style.transform = "translate(" + this.posx + "px, " + this.posy + "px)";
+    };
     return Mouse;
 }(Enemy));
 var Spider = (function (_super) {
     __extends(Spider, _super);
     function Spider() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.call(this, "spider") || this;
+        _this.posx = 300;
+        _this.posy = 300;
+        return _this;
     }
+    Spider.prototype.update = function () {
+        this.element.style.transform = "translate(" + this.posx + "px, " + this.posy + "px)";
+    };
     return Spider;
 }(Enemy));
 var EasyAttack = (function () {

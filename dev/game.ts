@@ -4,8 +4,14 @@ class Game {
     private coins:number = 0
     private textfield:HTMLElement
 
+    public enemies:Enemy[] = []
+
     private constructor(){
         this.textfield = document.getElementsByTagName("textfield")[0] as HTMLElement
+
+        this.enemies.push(
+            new Mouse()
+        )
 
         this.gameLoop()
     }
@@ -18,6 +24,10 @@ class Game {
     }
 
     private gameLoop():void {
+        for(let enemey of this.enemies) {
+            enemey.update()
+        }
+
         requestAnimationFrame(() => this.gameLoop())
     }
 

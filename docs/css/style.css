@@ -48,13 +48,13 @@ background {
 }
 
 spider {
-    width:224px; height:138px;
+    width:627px; height:314px;
     background-image: url(../images/spider.png);
     cursor: pointer;
 }
 
 mouse {
-    width:224px; height:138px;
+    width:375px; height:111px;
     background-image: url(../images/mouse.png);
     cursor: pointer;
 }
