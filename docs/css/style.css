@@ -1,6 +1,10 @@
 body, html {
-    margin:0; padding:0;
-    width:100%; height:100%;
+    font-family: "Menlo", Arial, Helvetica, sans-serif;
+    color:white;
+    overflow:hidden;
+    margin:0px; padding:0px;
+    background-color:#333;
+    font-family: 'Press Start 2P', cursive;
 }
 
 * {
@@ -27,8 +31,30 @@ ui {
 }
 
 textfield {
-    font-size: 1.4em;
+    font-size: 2.5em;
     width:530px;
-    text-shadow: 0px 4px 0px rgba(0,0,0,0.5);
-    transform: translateY(80px);
+    text-shadow: 0px 4px 0px rgba(0,0,0,0);
+    transform: translateY(30px) translateX(30px);
+    color: #000000;
+    font-weight: bold;
+}
+
+background {
+    width:100%; height:100%;
+    background-image: url(../images/background.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+}
+
+spider {
+    width:224px; height:138px;
+    background-image: url(../images/spider.png);
+    cursor: pointer;
+}
+
+mouse {
+    width:224px; height:138px;
+    background-image: url(../images/mouse.png);
+    cursor: pointer;
 }
