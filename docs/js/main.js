@@ -9,13 +9,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var EasyAttack = (function () {
-    function EasyAttack() {
-    }
-    EasyAttack.prototype.attack = function () {
-    };
-    return EasyAttack;
-}());
 var Enemy = (function () {
     function Enemy() {
     }
@@ -50,13 +43,6 @@ var Game = (function () {
 window.addEventListener("load", function () {
     Game.getInstance();
 });
-var MediumAttack = (function () {
-    function MediumAttack() {
-    }
-    MediumAttack.prototype.attack = function () {
-    };
-    return MediumAttack;
-}());
 var Mouse = (function (_super) {
     __extends(Mouse, _super);
     function Mouse() {
@@ -71,4 +57,18 @@ var Spider = (function (_super) {
     }
     return Spider;
 }(Enemy));
+var EasyAttack = (function () {
+    function EasyAttack() {
+    }
+    EasyAttack.prototype.attack = function () {
+    };
+    return EasyAttack;
+}());
+var MediumAttack = (function () {
+    function MediumAttack() {
+    }
+    MediumAttack.prototype.attack = function () {
+    };
+    return MediumAttack;
+}());
 //# sourceMappingURL=main.js.map
