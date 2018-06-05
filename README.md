@@ -7,3 +7,7 @@ Tijdens het spelen kan je ook power ups kopen van je verdiende geld. Dit geld ve
 # Pull request week 4
 
 Link: https://github.com/joey-school/cmgt-game-1/pull/1
+
+#Peer Review week 6
+
+Link: https://github.com/duncanteege/theminimalist/issues/2
